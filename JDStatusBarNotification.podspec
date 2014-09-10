@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT' }
   s.author       = { 'Markus Emrich' => 'markus@nxtbgthng.com' }  
   
-  s.source       = { :git => 'https://github.com/jaydee3/JDStatusBarNotification.git', :tag => "#{s.version}" }
+  s.source       = { :git => 'https://github.com/jagregory/JDStatusBarNotification.git' }
   s.source_files = 'JDStatusBarNotification/**'
   s.frameworks   = 'QuartzCore'
   
