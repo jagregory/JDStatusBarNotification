@@ -495,6 +495,11 @@
     UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
     UIWindow *ourWindow = [[self view] window];
     
+    // we don't have a window at all, usually if we're in a unit test
+    if (ourWindow == nil) {
+        return nil;
+    }
+    
     // return directly, keywindow isn't our window
     if (keyWindow != ourWindow) {
         return [keyWindow rootViewController];
